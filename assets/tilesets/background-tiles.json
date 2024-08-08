@@ -1,0 +1,290 @@
+{
+    "name": "Background Tiles Version 2",
+    "version": "1.0",
+    "description": "The Background Tiles for the Game",
+    "author": "PolyGoneAway",
+    "textures": [
+        "./assets/images/tiles/tiles.png"
+    ],
+    "tile-size": {
+        "x": 32,
+        "y": 32
+    },
+    "tiles": [
+        {
+            "name": "grass",
+            "texture": 0,
+            "variants": [
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 0,
+                                "y": 0
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        [
+                            "any",
+                            "any",
+                            "any"
+                        ],
+                        [
+                            "any",
+                            "any",
+                            "any"
+                        ],
+                        [
+                            "any",
+                            "any",
+                            "any"
+                        ]
+                    ],
+                    "facing": "None"
+                }
+            ]
+        },
+        {
+            "name": "water",
+            "texture": 0,
+            "variants": [
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 23,
+                                "y": 1
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["water","water","water"],
+                        ["water","water","water"],
+                        ["water","water","water"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 23,
+                                "y": 0
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        [
+                            "any",
+                            "grass",
+                            "any"
+                        ],
+                        [
+                            "water",
+                            "water",
+                            "water"
+                        ],
+                        [
+                            "any",
+                            "water",
+                            "any"
+                        ]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 22,
+                                "y": 0
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","grass","any"],
+                        ["grass","water","water"],
+                        ["any","water","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 24,
+                                "y": 0
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","grass","any"],
+                        ["water","water","grass"],
+                        ["any","water","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 22,
+                                "y": 1
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","any"],
+                        ["grass","water","water"],
+                        ["any","water","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 24,
+                                "y": 1
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","any"],
+                        ["water","water","grass"],
+                        ["any","water","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 23,
+                                "y": 2
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","any"],
+                        ["water","water","water"],
+                        ["any","grass","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 22,
+                                "y": 2
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","any"],
+                        ["grass","water","water"],
+                        ["any","grass","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 24,
+                                "y": 2
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","any"],
+                        ["water","water","grass"],
+                        ["any","grass","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 22,
+                                "y": 4
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","any","any"],
+                        ["any","water","water"],
+                        ["any","water","grass"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 24,
+                                "y": 4
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","any","any"],
+                        ["water","water","any"],
+                        ["grass","water","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 22,
+                                "y": 6
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["any","water","grass"],
+                        ["any","water","water"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "None"
+                },
+                {
+                    "frames": [
+                        {
+                            "texture-coordinate": {
+                                "x": 24,
+                                "y": 6
+                            },
+                            "duration": 100
+                        }
+                    ],
+                    "env": [
+                        ["grass","water","any"],
+                        ["water","water","any"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "None"
+                }
+            ]
+        }
+        
+    ]
+}

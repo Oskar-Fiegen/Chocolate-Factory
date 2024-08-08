@@ -1,0 +1,58 @@
+{
+    "name": "Background Tiles Version 2",
+    "version": "1.0",
+    "description": "The Foreground Tiles for the Game",
+    "author": "PolyGoneAway",
+    "textures": [
+        "./assets/images/tiles/foreground_tiles.png"
+    ],
+    "tile-size": {
+        "x": 32,
+        "y": 32
+    },
+    "tiles": [
+        {
+            "name": "conveyor_belt",
+            "texture": 0,
+            "variants": [
+                {
+                    "frames": [{"texture-coordinate": {"x": 2,"y": 3},"duration": 100}],
+                    "env": [
+                        ["any","any","any"],
+                        ["conveyor_belt","any","conveyor_belt"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "right"
+                },
+                {
+                    "frames": [{"texture-coordinate": {"x": 1,"y": 3},"duration": 100}],
+                    "env": [
+                        ["any","any","any"],
+                        ["any","any","conveyor_belt"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "right"
+                },
+                {
+                    "frames": [{"texture-coordinate": {"x": 3,"y": 3},"duration": 100}],
+                    "env": [
+                        ["any","any","any"],
+                        ["conveyor_belt","any","any"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "right"
+                },
+                {
+                    "frames": [{"texture-coordinate": {"x": 0,"y": 3},"duration": 100}],
+                    "env": [
+                        ["any","any","any"],
+                        ["any","any","any"],
+                        ["any","any","any"]
+                    ],
+                    "facing": "right"
+                }
+            ]
+        }
+        
+    ]
+}

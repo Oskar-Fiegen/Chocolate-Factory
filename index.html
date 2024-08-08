@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; viewport-fit=cover">
+
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style"
+    content="black-translucent">
+
+    
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    
+    
+    <canvas id="myCanvas"style='position: absolute; right :0px; bottom : 0px;'>Your browser does not support canvas element. You can't play the game :/</canvas>
+    <div style="visibility: hidden;"id="GUI"></div>
+    <div style="visibility: hidden;"class="deadspace"></div>
+    <div style="visibility: hidden;"class="screen"></div>
+
+    <div style="visibility: hidden;" class="slidecontainer">
+        <input type="range" min="1" max="100" value="90" class="slider" id="inputW">
+        <p class="SliderOutput">Width: </p><p id="outputW" class="SliderOutput">10</p>
+        <br>
+        <input type="range" min="1" max="100" value="90" class="slider" id="inputH">
+        <p class="SliderOutput">Heigth: </p><p id="outputH" class="SliderOutput">10</p>
+        <br>
+        <input type="range" min="-50" max="50" value="0" step="0.1" class="slider" id="inputCX">
+        <p class="SliderOutput">Camera X: </p><p id="outputCX" class="SliderOutput">10</p>
+        <br>
+        <input type="range" min="-50" max="50" value="0" step="0.1" class="slider" id="inputCY">
+        <p class="SliderOutput">Camera Y: </p><p id="outputCY" class="SliderOutput">10</p>
+    </div>
+
+    <script>
+        
+        test_var = "before"
+        if ("serviceWorker" in navigator) {
+        // Register a service worker hosted at the root of the
+        // site using the default scope.
+        navigator.serviceWorker.register("./service-worker.js").then(
+            (registration) => {
+            console.log("Service worker registration succeeded:", registration);
+            test_var = "test"
+            },
+            (error) => {
+            console.error(`Service worker registration failed: ${error}`);
+            test_var = "fail"
+            },
+        );
+        } else {
+        console.error("Service workers are not supported.");
+        test_var = "no worker"
+        }
+
+        /*if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+            
+        }*/
+    </script>
+
+    
+
+
+    <!--Classes-->
+    <script src="src/classes/gui/gui-deadspace.js"></script>
+    <script src="src/classes/gui/gui-element.js"></script>
+    <script src="src/classes/gui/gui-text-element.js"></script>
+    <script src="src/classes/gui/gui-slider-element.js"></script>
+    <script src="src/classes/gui/gui-checkbox-element.js"></script>
+    <script src="src/classes/gui/gui-renderer.js"></script>
+    <script src="src/classes/gui/gui-font.js"></script>
+    <script src="src/classes/gui/gui-button-element.js"></script>
+    <script	src="src/classes/gui/gui-style.js"></script>
+    <script src="src/classes/gui/gui-image-element.js"></script>
+
+    <script src="src/classes/game/camera.js"></script>
+
+    <script src="src/classes/vector.js"></script>
+    <script src="src/classes/aabb.js"></script>
+    <script src="src/classes/touch/touch-handler.js"></script>
+    <script src="src/classes/screen.js"></script>
+    
+    
+    <!--Functions-->
+    <script src="src/functions/draw-text.js"></script>
+    <script src="src/functions/canvas-transforms.js"></script>
+    <script src="src/functions/colors.js"></script>
+
+
+    <script src="src/classes/sprite.js"></script>
+    <script src="src/classes/tile.js"></script>
+    <script src="src/classes/tilemap.js"></script>
+    <script src="assets/maps/tiles/tiles.js"></script>
+    
+    <script src="src/main.js"></script>
+</body>
+</html>
