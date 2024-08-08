@@ -1,7 +1,7 @@
 {
     "name": "Sweet Works",
     "short_name": "Sweet Works",
-    "start_url": "/Chocolate-Factory/",
+    "start_url": ".",
     "icons": [
         {
             "src": "icons/manifest-icon-192.png",
