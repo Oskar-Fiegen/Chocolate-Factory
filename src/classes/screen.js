@@ -36,7 +36,7 @@ class MainMenuScreen extends Screen {
                             
                 new GUIImageElement({position: new Vector2(0,50), id: 2, style: new GUIStyle({centered_x: true, image_scale_x: 3, image_scale_y: 3, centered_y: true}), sprite: new Sprite({position: new Vector2(0,0), imageSrc: "./assets/images/gui/icons.png", area: new Vector4(0,0,7,13), isWorldSpace: false })}),
 
-                new GUIButtonElement({position: new Vector2( 20, 220), id: 2, text: " ", style: new GUIStyle({image_scale_x: 3, image_scale_y: 3, button_size: new Vector2(48, 48), button_sprite: new Sprite({position: new Vector2(0,0), imageSrc: "./assets/images/gui/icons.png", area: new Vector4(16,0,16,16), isWorldSpace: false })})}),
+                new GUIButtonElement({position: new Vector2( 20, 220), id: 2, text: "Hello", style: new GUIStyle({image_scale_x: 3, image_scale_y: 3, button_size: new Vector2(48, 48), button_sprite: new Sprite({position: new Vector2(0,0), imageSrc: "./assets/images/gui/icons.png", area: new Vector4(16,0,16,16), isWorldSpace: false })})}),
                 //new GUIImageElement({position: new Vector2(20,220), id: 2, style: new GUIStyle({image_scale_x: 3, image_scale_y: 3}), sprite: new Sprite({position: new Vector2(0,0), imageSrc: "./assets/images/gui/icons.png", area: new Vector4(16,0,16,16), isWorldSpace: false })}),
 
                 new GUITextElement({position: new Vector2(0,0), id: 2, text: "No Error", style: new GUIStyle({text_size_: 10, text_color: rgb(0,0,0)})})
@@ -55,7 +55,7 @@ class MainMenuScreen extends Screen {
         ctx.fillStyle = rgb(0, 80, 150);
         ctx.fillRect(0,0, canvas.width, canvas.height);
         
-        if (test_var == undefined) {this.GUI.elements[5].text = "Error"} else {this.GUI.elements[5].text = test_var}
+        //if (test_var == undefined) {this.GUI.elements[5].text = "Error"} else {this.GUI.elements[5].text = test_var}
         if (this.GUI.elements[0].pressed) {console.log("Start"); currentScreen = gs; this.GUI.elements[0].pressed = false}
         
         if (this.GUI.elements[1].pressed) {window.location.reload();}
